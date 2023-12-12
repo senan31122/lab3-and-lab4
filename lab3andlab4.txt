@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main(void){
+    int sayi, i ,toplam = 0, carpim = 1, kare = 0;
+    printf("Bir sayi girin:");
+    scanf("%d",&sayi);
+    for (i=1; i<=sayi; i++){
+        if (i%2==0){
+            kare += i*i;
+        }
+        else{
+            carpim *= i;
+            toplam += i;
+        }
+    }
+    printf("Tek sayilerin Toplami:%d\nTeksayilarin Carpimi:%d\nCift Sayilarin Karesinin Toplami:%d",toplam,carpim,kare);
+    return 0;
+}
